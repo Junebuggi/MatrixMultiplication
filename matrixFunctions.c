@@ -3,7 +3,6 @@
  * used by the main program for Assignment 1.
  *
  * Author: Emma Boulay
- * Student Number: 101073617
  */
 #include "mmult.h"
 #include "matrixFunctions.h"
