@@ -1,17 +1,14 @@
 Assignment 1: Shared Memory and Matrix Multiplication
 Name: Emma Boulay
-Student Number: 101073617
 
 Set-Up Instructions:
-1. Extract the archived files in 101073617_Assignment1.tar.gz
-	$ tar -xvzf 101073617_Assignment1.tar.gz
-2. Run the makefile to compile:
+1. Run the makefile to compile:
 	$ make
-3. Run the program:
+2. Run the program:
 	$ ./mmult
-4. To run the program with my test data:
+3. To run the program with my test data:
 	$ ./mmult mydata
-5. To run the program with random matrices use the -r option:
+4. To run the program with random matrices use the -r option:
 	$ ./mmult -r
 
 /********** Discussion of Test Results ***********/
