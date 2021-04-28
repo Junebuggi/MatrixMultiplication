@@ -1,0 +1,23 @@
+Design Goals
+Name: Emma Boulay
+Student Number: 101073617
+Goal 1: Create a shared memory segment using shmget and then make this shared memory
+	accessible to the program. The purpose of this is so the child processes are able to 
+	not only access the matrices to be multiplied (M and N) but the final product (Q)
+	can be accessed (with the proper updates) in the parent process to be printed
+Goal 2: To use child processes to concurrently evaluate the final result of each row of Q.
+	The speed is less noticeable with a smaller matrix, but with very large matrices
+	being able to complete multiple tasks concurrently will save a lot of processing
+	time. This is accomplished by forking the parent 4 times and each child process
+	will make a call to the function matrixMultiplication where it will update its row
+	of the shared memory matrix Q.
+Goal 3: Find the largest integer of each row. This was done by using shared memory
+	to store the largest int of each row found in the matrixMultiplication function.
+	The largest integer in the matrix Q was found by finding the largest int of the Li
+	array. A getLargestInt function was used to simplify this.
+Goal 4: To find the processing time of all the child processes. This was done by making
+	a call to getTimeOfDay before the first fork and after the parent process stopped
+	waiting.
+Goal 5: For the parent process to wait for all child processes to complete. This was done
+	by having the call to wait in a while (nChildProcesses > 0) loop and each time a child
+	finished it would decrement the nChildProcesses variable.
