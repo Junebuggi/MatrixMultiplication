@@ -20,7 +20,6 @@
  * the process to store the results of the multiplication
  *
  * Author: Emma Boulay
- * Student Number: 101073617
  */
 struct shared_matrices_t {
     int m[ROW][COL];
