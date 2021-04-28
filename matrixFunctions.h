@@ -2,7 +2,6 @@
  * This is the header file for matrixFunctions.c
  *
  * Author: Emma Boulay
- * Student Number: 101073617
  */
 
 #ifndef MATRIXFUNCTIONS_H
