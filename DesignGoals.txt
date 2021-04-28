@@ -1,6 +1,6 @@
 Design Goals
 Name: Emma Boulay
-Student Number: 101073617
+
 Goal 1: Create a shared memory segment using shmget and then make this shared memory
 	accessible to the program. The purpose of this is so the child processes are able to 
 	not only access the matrices to be multiplied (M and N) but the final product (Q)
