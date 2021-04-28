@@ -13,7 +13,6 @@
  * Using the command line option "-r" randomizes the matrices M and N
  *
  * Author: Emma Boulay
- * Student Number: 101073617
  *
  */
 int main(int argc, char *argv[]){
